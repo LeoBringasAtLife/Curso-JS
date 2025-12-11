@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora JS</title>
+    <script src="/calculadora/iindex.js" defer></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f4f4;
+      }
+
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+
+      input,
+      input[type='submit'] {
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+        padding: 10px;
+        width: 200px;
+      }
+
+      p {
+        color: #555;
+        text-align: center;
+      }
+
+      #resultado {
+        min-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calculadora en JavaScript</h1>
+
+    <div>
+      <input type="text" id="op1" placeholder="Primer número" required />
+      <input type="text" id="operacion" placeholder="+, -, *, /" required />
+      <input type="text" id="op2" placeholder="Segundo número" required />
+      <input type="submit" value="calcular" id="calcular" />
+
+      <p id="resultado"></p>
+    </div>
+  </body>
+</html>
